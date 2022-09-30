@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Site for Mobiles, Electronics, Furniturs and More!</title>
+    <link rel="stylesheet" href="flipkart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="changeImg()">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="container-item1"><a class="primary" href="#">Flipkart</a></div>
+                <div class="container-item2"><a class="secondary" href="#">Explore
+                        <span class="container-item3">Plus</span>
+                    </a>
+                </div>
+            </div>
+            <div class="form">
+                <form action="" class="form-search">
+                    <input type="text" name="search" id="search" class="search"
+                        placeholder="Search for products, brands and more">
+                    <!-- <button class="button" type="submit">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                          </svg>
+                    </button> -->
+                </form>
+            </div>
+            <div class="login">
+                <div class="login-center" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                    <div class="login-point">
+                        <div>
+                            <a href="#" class="login-class">
+                                Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newCustomerContainer" id="newCustomerContainer">
+                <div class="after">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" id="fill" class="bi bi-caret-up-fill"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                    </svg>
+                </div>
+                <div class="new-container">
+                    <div class="newCustomer">
+                        <a href="#">New customer?</a>
+                    </div>
+                    <div class="sign"><a href="#">
+                            Sign Up</a>
+                    </div>
+                </div>
+                <div class="profile">
+                    <ul class="big">
+                        <li class="small"><a class="a" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                                    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                                </svg>
+                                My Profile</a></li>
+
+                        <li class="small"><a class="a" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                                </svg>
+                                Flipkart Plus Zone</a></li>
+
+                        <li class="small"><a class="a" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stickies-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H13a1 1 0 0 1 1 1H1.5a.5.5 0 0 0-.5.5V14a1 1 0 0 1-1-1V1.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5v4.396c0 .223.27.335.427.177l5.146-5.146a.25.25 0 0 0-.177-.427H10.5a1 1 0 0 0-1 1z" />
+                                </svg>Orders</a></li>
+
+                        <li class="small"><a class="a" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                </svg>
+                                Wishlist</a></li>
+
+                        <li class="small"><a class="a" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gift-fill-1"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3z" />
+                                    <path
+                                        d="M15 7v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z" />
+                                </svg>
+                                Rewards</a></li>
+
+                        <li class="small"><a class="a" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wallet-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                    <path
+                                        d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z" />
+                                </svg>
+                                Gift Cards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more">
+                <div class="more-center">
+                    <div class="more-point">
+                        <div class="more-class">More</div>
+                    </div>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="moreContainer-1" id="moreContainer-1">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" id="fill" class="bi bi-caret-up-fill-1"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                </svg>
+
+                <ul class="big">
+                    <li class="smaller"><a class="a" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                            </svg>
+
+                            Notification Preferences</a></li>
+                    <li class="smaller"><a class="a" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill-1"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
+                            </svg>
+
+                            Sell on Flipkart</a></li>
+                    <li class="smaller"><a class="a" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-square-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z" />
+                            </svg>
+
+                            24*7 Customer Care</a></li>
+                    <li class="smaller"><a class="a" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-badge-ad-fill-1"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm6.209 6.32c0-1.28.694-2.044 1.753-2.044.655 0 1.156.294 1.336.769h.053v-2.36h1.16V11h-1.138v-.747h-.057c-.145.474-.69.804-1.367.804-1.055 0-1.74-.764-1.74-2.043v-.695zm3.142.017c0-.699-.422-1.138-1.002-1.138-.584 0-.954.444-.954 1.239v.453c0 .8.374 1.248.972 1.248.588 0 .984-.44.984-1.2v-.602zM4.17 9.457L3.7 11H2.5l2.013-5.999H5.9L7.905 11H6.644l-.47-1.542H4.17zm1.767-.883l-.734-2.426H5.15l-.734 2.426h1.52z" />
+                            </svg>
+
+                            Advertise</a></li>
+                    <li class="smaller"><a class="a" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-arrow-down-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5z" />
+                            </svg>
+
+                            Download App</a></li>
+
+                </ul>
+            </div>
+            <div class="cart">
+                <div class="cart-center">
+                    <div class="cart-point">
+                        <a href="#" class="cart-class">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                            <span>Cart</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="item">
+        <div class="item-section">
+            <br>
+            <ul class="item-area">
+                <li class="items"><span class="box">Electronics
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">TVs & Appliances
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Men
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Women
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Baby & Kids
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Home & Furniture
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Sports, Books & More
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Flights
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+                <li class="items"><span class="box">Offer Zone
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="background">
+        <div class="background-image">
+            <img name="slide" width="1520" height="280">
+
+
+            <div class="left">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </div>
+            <div class="right">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="area">
+        <div class="border">
+            <section class="border-now">
+                <div class="heading">
+                    <h2>Deals of the Day</h2>
+                </div>
+                <div class="logo">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stopwatch" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z" />
+                        <path fill-rule="evenodd"
+                            d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5a.5.5 0 0 1 .5-.5zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" />
+                        <path d="M7 1h2v2H7V1z" />
+                    </svg>
+
+                </div>
+
+                <div class="time-bar">
+                    <span id="time"></span>
+                    <!-- <span>00</span>
+                <span>:</span>
+                <span>04</span>
+                <span>:</span>
+                <span>02</span> -->
+                    <span>Left</span>
+                </div>
+                <div class="sidebar">
+                    <a href="#" class="sidebar-item">View All</a>
+                </div>
+
+            </section>
+
+
+            <section class="images">
+                <div class="images-folder">
+                    <a href="#" class="images-folder-1">
+                        <img src="Images/headphone.jpg" class="img" alt="">
+                        <div class="parimary">
+                            Headphones & Speakers
+                        </div>
+                        <div class="secondary">
+                            Upto 50% off
+                        </div>
+                        <div class="para">
+                            JBL, Sony & More
+                        </div>
+                    </a>
+                </div>
+                <div class="images-folder">
+                    <a href="#" class="images-folder-1">
+                        <img src="Images/brand.jpg" class="img" alt="">
+                        <div class="parimary">
+                            Branded T-Shirt
+                        </div>
+                        <div class="secondary">
+                            Upto 70% off
+                        </div>
+                        <div class="para">
+                            Branded Items
+                        </div>
+                    </a>
+                </div>
+                <div class="images-folder">
+                    <a href="#" class="images-folder-1">
+                        <img src="Images/jwe.jpg" alt="" class="img">
+                        <div class="parimary">
+                            #BudgetBuy
+                        </div>
+                        <div class="secondary">
+                            Upto 50% off
+                        </div>
+                        <div class="para">
+                            Beauty
+                        </div>
+                    </a>
+                </div>
+                <div class="images-folder">
+                    <a href="#" class="images-folder-1">
+                        <img src="Images/shoes.jpg" class="img" alt="">
+                        <div class="parimary">
+                            Shoes
+                        </div>
+                        <div class="secondary">
+                            From 199
+                        </div>
+                        <div class="para">
+                            Deal of the day
+                        </div>
+                    </a>
+                </div>
+                <div class="images-folder">
+                    <a href="#" class="images-folder-1">
+                        <img src="Images/shampoo.jpg" class="img" alt="">
+                        <div class="parimary">
+                            Shampooes
+                        </div>
+                        <div class="secondary">
+                            From 199
+                        </div>
+                        <div class="para">
+                            Hair Care
+                        </div>
+                    </a>
+                </div>
+                <div class="images-folder">
+                    <a href="#" class="images-folder-1">
+                        <img src="Images/sofa.jpg" class="img" alt="">
+                        <div class="parimary">
+                            Furniture
+                        </div>
+                        <div class="secondary">
+                            Upto 70% off
+                        </div>
+                        <div class="para">
+                            Branded Items
+                        </div>
+                    </a>
+                </div>
+                <div class="right-2">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right-2" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <!-- <div class="images-folder">
+                <a href="#" class="images-folder-1">
+                    <img src="Images/makeup.jpg" class="img" alt="">
+                    <div class="parimary">
+                        Cosmetics
+                    </div>
+                    <div class="secondary">
+                        Upto 50% off
+                    </div>
+                    <div class="para">
+                        Lakme & More
+                    </div>
+                </a>
+            </div> -->
+
+            </section>
+        </div>
+        <aside>
+            <div class="aside">
+                <a href="#" class="side-image">
+                    <img src="Images/tv.jpg" alt="" class="side-img">
+                </a>
+            </div>
+        </aside>
+    </div>
+    <section>
+        <div id="image-item-container">
+            <a href="#" class="linear">
+                <img src="Images/boss.png" class="picture" alt="Images">
+            </a>
+            <a href="#" class="linear">
+                <img src="Images/trim.png" class="picture" alt="Images">
+            </a>
+            <a href="#" class="linear">
+                <img src="Images/makeup.png" class="picture" alt="Images">
+            </a>
+
+        </div>
+    </section>
+
+    <section id="sec">
+        <div class="appliContainer">
+            <h1>Top Rated Appliances For You</h1>
+            <p>Shop Now!</p>
+
+
+            <div class="sider">
+                <a href="#" class="sider-item">View All</a>
+            </div>
+
+        </div>
+
+        <div class="secondaryContainer">
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/egg.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Egg Cookers
+                    </div>
+                    <div class="second">
+                        Upto 50% off
+                    </div>
+                    <div class="third">
+                        Best Discount!
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/electric.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Electric Kettles
+                    </div>
+                    <div class="second">
+                        Shop Now!
+                    </div>
+                    <div class="third">
+                        Prestige
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/iron.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Electric Iron
+                    </div>
+                    <div class="second">
+                        Upto 75% off
+                    </div>
+                    <div class="third">
+                        Best Deal!
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/cook.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Cooker
+                    </div>
+                    <div class="second">
+                        Upto 50% off
+                    </div>
+                    <div class="third">
+                        Best Discount!
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/lg.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Best Smart LG TVs
+                    </div>
+                    <div class="second">
+                        From 14,999
+                    </div>
+                    <div class="third">
+                        Sony
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/lg1.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Biggest Launches
+                    </div>
+                    <div class="second">
+                        Explore Now
+                    </div>
+                    <div class="third">
+                        Sumsung, Sony
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/lg2.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Grab Now!
+                    </div>
+                    <div class="second">
+                        Upto 50% off
+                    </div>
+                    <div class="third">
+                        Best Deal!
+                    </div>
+                </a>
+            </div>
+            <div class="pics">
+                <a href="#" class="pics-items">
+                    <img src="Images/egg.png" class="pics-items-1" alt="">
+                    <div class="first">
+                        Egg Cookers
+                    </div>
+                    <div class="second">
+                        Upto 50% off
+                    </div>
+                    <div class="third">
+                        Best Discount!
+                    </div>
+                </a>
+            </div>
+
+            <div class="right-1">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right-1" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="section">
+
+        <div class="top">
+            <h3 class="top-heading">Top Stories: Brand Directory</h3>
+            <p>MOST SEARCHED FOR ON FLIPKART:Infrared ThermometerFlipkart Gift Cards StoreSuper Fan ShowFake or Not
+                ShowSnapchat SpectaclesSareeFlipkart Axis Bank Credit CardHand SanitizerRealme BandHuawei gt 2e Smart
+                Watch5G MobilesFlipkart VideosFlipkart Pay LaterFlight BookingMi Air Purifier 2CiQOOO 3Studio
+                FurnitureVaporizerNebulizersHand WashPollution MasksA.P.J Abdul Kalam BooksChetan Bhagat BooksAmrita
+                Pritam BooksHuawei Band 4Realme 5iRealme Buds AirNokia 55 Inch TVRealme X2 PRONoise Colorfit Pro 2
+                SmartwatchUnicorn ToysRedmi 8Honor 20iOPPO K1Realme 5Realme 5 ProFlipkart Axis Bank Credit CardRedmi
+                K20Redmi K20 ProRealme 3iRealme XPhantom 9Redmi 7ARedmi Note 7SEarringsMens Watches3m
+                MasksJewelleryWatchesGold CoinMangalsutran95 masksSunglassesMi SunglassesBackpacks</p><br>
+            <p>Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung
+                A31Realme X2Realme 5Infinix Hot 8iPhone 11iPhone 11 ProiPhone 11 Pro MaxMobile Offersiphone xiphone
+                8iphone 7iphone 6Redmi 5A4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile</p><br>
+            <p>CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR
+                LAPTOPS:Microsoft Surface Go Pentium Gold 64GBMicrosoft Surface Go Pentium 128GBBranded LaptopsApple
+                LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsBusiness
+                Laptops
+                TVS:MI 43 Inch 4K TVMI 40 Inch TVMi 65 Inch TVSamsung 32 Smart TVLG TVTVSony TVSamsung TVMi 49 Inch
+                Smart TVAndroid TelevisionIffalcon TvMi TV</p><br>
+            <p>APPLIANCES:Voltas ACHitachi ACLloyd ACBlue Star ACDaikin ACLG ACSamsung RefrigeratorsHaier
+                RefrigeratorWhirlpool Refrigerator</p><br>
+            <p>CLOTHING:BOSS SaleMen ShirtsMen T-ShirtsJeansRaincoatMen SuitsMen TrousersMens
+                BlazersSareesDressesSkirtsDesigner Salwar SuitsBraDesigner KurtisMen KurtaGym WearParty DressesPalazzo
+                SuitsGlovesNightyMaxi DressesAnarkaliIndo Western DressGownsCulottesSherwaniGirls ClothesSalwar
+                SuitsTopsLehengaDress MaterialsKurtisDesigner SareesSummer DressesLeggingsDesigner BlousesKids
+                ClothingBlouse DesignsBanarasi SareesSilk SareesCotton SareesShortsBlouseLong SkirtsPalazzoMini
+                DressesNight SuitsBanarsi SuitInnerwearSports WearCapChanderi SareesLinen SareesPaithani
+                SareesPantiesSalwarRuffle SareesBikiniPajamasDhoti KurtaManyavar KurtasJacketsWestern
+                WearSleepwearClothingKids ClothingWinter WearGeorgette SareesEthnic WearBriefs & TrunksSweatshirtsHome
+                Wear Dress</p><br>
+            <p>FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers
+                ShoesSneakersWomens BootsSports ShoesLoafersSandalsCasual ShoesWomens Skechers ShoesFormal ShoesSchool
+                Shoes
+            <p>GROCERIES:PhonePe Grocery VoucherSugar Jaggery SaltsRiceMasala & SpicesDal</p> <br>
+            <p>PulsesAttaCookiesNoodlesGheeDry FruitsToor DalOlive OilSoapSunflower OilEggsToilet CleanerHarpic Toilet
+                CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaButterAmul
+                MilkJuicesTata TeaGrocery StoreGrocery Essential StoreMuesliBreakfast CerealHand WashHand SanitizerLizol
+                Floor CleanerDetergentsChipsTeaMilkChocolatesSoft DrinksRavaCoffeeSugarColgate
+                ToothpasteShampooAlmondsMoong Dal</p><br>
+            <p>BEST SELLING ON FLIPKART:Samsung Galaxy Tab S7+RakhiBooksToy StoreCandlesHelmetsWall ClocksBaby
+                FoodChocolatesCyclesCalculatorsLipsticksFastrack Watches
+                FURNITURE:FurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsRed
+                SofaWhite SofaGreen SofaBlack SofaBrown Sofa</p>
+
+            <h3 class="top-heading">Flipkart: The One-stop Shopping Destination</h3>
+            <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to
+                another in search of the latest phone when you can find it on the Internet in a single click? Not only
+                mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops,
+                tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and
+                lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances
+                that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving
+                kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to
+                toys and musical instruments, we got them all covered. You name it, and you can stay assured about
+                finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in
+                your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p><br>
+
+            <p>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure
+                you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop
+                from Flipkart when there are multiple options available to you, well, the below will answer your
+                question.</p>
+
+            <h3 class="top-heading">Flipkart Plus</h3>
+            <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward
+                programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a
+                part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &
+                non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals,
+                exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short,
+                earn more when you shop more!</p><br>
+
+            <p>'s more, you can even use the Flipkart supercoins for a number of exciting services, like:
+                An annual Zomato Gold membership
+                An annual Hotstar Premium membership
+                6 months Gaana plus subscription
+                Rupees 550 instant discount on flights on ixigo
+                Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p>
+
+            <h3 class="top-heading">No Cost EMI</h3>
+            <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with
+                us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and
+                small appliances, furniture, electronics and watches, you can now shop without burning a hole in your
+                pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI.
+                Take a look ASAP! Terms and conditions apply.
+            </p>
+
+            <h3 class="top-heading">EMI on Debit Cards</h3>
+            <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore
+                credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping
+                accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with
+                us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis
+                Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers!
+                Terms and conditions apply.
+            </p>
+
+            <h3 class="top-heading">Mobile Exchange Offers</h3>
+            <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one
+                after the Flipkart experts calculate the value of your old phone, provided it is in a working condition
+                without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with
+                Exchange' option on the product description of the phone. So, be smart, always opt for an exchange
+                wherever possible. Terms and conditions apply.</p>
+
+            <h3 class="top-heading">What Can You Buy From Flipkart?</h3>
+            <h3 class="top-heading">Mobile Phones</h3>
+            <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether
+                you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
+                beautification apps, high-tech selfie cameras or just large internal space, we take care of all the
+                essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and
+                Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's
+                more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around
+                service centres. This plan entails you to a number of post-purchase solutions, starting at as low as
+                Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements
+                - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with
+                door-to-door services.
+            </p>
+
+            <h3 class="top-heading">Electronic Devices and Accessories</h3>
+            <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems,
+                hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a
+                flash. All you students out there, confused about what laptop to get? Our Back To College Store
+                segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design,
+                multitasking) with recommendations from top brands and industry experts, facilitating a shopping
+                experience that is quicker and simpler.</p><br>
+
+            <p>Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever
+                reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure
+                junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro,
+                Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at
+                a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial
+                favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for
+                beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll
+                find in our store.</p><br>
+
+            <p>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of
+                Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.</p><br>
+
+            <p>How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile
+                accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can
+                prove to be ideal travel companions for you and your phone; never again worry about running out of
+                charge or memory on your next vacation.
+            </p>
+
+            <h3 class="top-heading">Large Appliances</h3>
+            <p>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover
+                everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero
+                transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per
+                your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart
+                Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in
+                the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi
+                among many others.</p>
+
+            <h3 class="top-heading">Small Home Appliances</h3>
+            <p>Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs,
+                microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving
+                appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at
+                home.</p>
+
+            <h3 class="top-heading">Books, Sports and Games</h3>
+            <p>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books
+                by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a
+                tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-class">
+            <ul class="upper">
+                <li class="upper-li">ABOUT</li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Flipkart Stories</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Flipkart Wholesale</a></li>
+
+            </ul>
+            <ul class="upper">
+                <li class="upper-li">HELP</li>
+
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Cancellation & Returns</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">Infringement</a></li>
+            </ul>
+            <ul class="upper">
+                <li class="upper-li">POLICY</li>
+
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">EPR Compliance</a></li>
+            </ul>
+            <ul class="upper">
+                <li class="upper-li">SOCIAL</li>
+
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+
+            <div class="p">
+                <ul class="upper" style=" border-left: 1px solid #454d5e; padding-left: 30px;">
+
+                    <li class="upper-li">MAIL Us:</li>
+                    <p>Buildings Alyssa, Begonia &</p>
+
+                    <p>Outer Ring Road,</p>
+                    <p>Devarabeesanahalli Village,</p>
+
+                    <p>Bengaluru, 560103,</p>
+
+                    <p>Flipkart Internet Private Limited,</p>
+
+                    <p>Clove Embassy Tech Village,</p>
+
+                    <p>Karnataka,</p>
+                    <p>India</p>
+
+                </ul>
+                <ul class="upper">
+                    <li class="upper-li">Registered Office Address:</li>
+                    <p>Flipkart Internet Private Limited,</p>
+
+                    <p>Buildings Alyssa, Begonia &</p>
+
+                    <p>Clove Embassy Tech Village,</p>
+
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+
+                    <p>Bengaluru, 560103,</p>
+
+                    <p>Karnataka, India</p>
+
+                    <p>CIN : U51109KA2012PTC066107</p>
+
+                    <p>Telephone: <a href="#">1800 208 9898</a></p>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <ul class="ul">
+                <li>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
+                    </svg>
+                    <a href="#">Sell On Flipkart</a></li>
+                <li>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-badge-ad-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm6.209 6.32c0-1.28.694-2.044 1.753-2.044.655 0 1.156.294 1.336.769h.053v-2.36h1.16V11h-1.138v-.747h-.057c-.145.474-.69.804-1.367.804-1.055 0-1.74-.764-1.74-2.043v-.695zm3.142.017c0-.699-.422-1.138-1.002-1.138-.584 0-.954.444-.954 1.239v.453c0 .8.374 1.248.972 1.248.588 0 .984-.44.984-1.2v-.602zM4.17 9.457L3.7 11H2.5l2.013-5.999H5.9L7.905 11H6.644l-.47-1.542H4.17zm1.767-.883l-.734-2.426H5.15l-.734 2.426h1.52z" />
+                    </svg>
+                    <a href="#">Advertise</a></li>
+                <li>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gift-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3z" />
+                        <path d="M15 7v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z" />
+                    </svg>
+                    <a href="#">Gift Cards</a></li>
+                <li>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z" />
+                    </svg>
+                    <a href="#">Help Center</a></li>
+                <li>&copy 2007-2020 Flipkart.com</li>
+                <li><img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_b3ab24.svg" alt="">
+                </li>
+            </ul>
+        </div>
+
+
+    </footer>
+
+    <script type="text/javascript" src="flipkart.js">
+    </script>
+</body>
+
+</html>

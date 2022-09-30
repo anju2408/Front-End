@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: apercu-web;
+}
+
+.navbar-1 {
+    background-color: #fbece3;
+}
+
+.navbar-1 .row .text-end {
+    padding-right: 131px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.navbar-1 .row .col-4 p {
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.navbar-1 .row {
+    padding: 5px 10px;
+    height: 37px;
+}
+
+.navbar-2 .nav-link {
+    font-size: 13px;
+    letter-spacing: .05rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #001e42;
+}
+
+.navbar-2 .nav-link i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.navbar-2 {
+    padding: 12px 120px !important;
+    box-shadow: 0 10px 10px #0000000d;
+}
+
+.navbar-2 .col-4 .row {
+    padding: 10px 0;
+}
+
+.navbar-2 .navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: #001e42;
+}
+
+section {
+    padding: 10px 80px;
+}
+
+section .icon {
+    max-width: 120px;
+    margin-top: -5px;
+}
+
+section .btn-slide {
+    border-radius: 50%;
+    background-color: #ffcdac;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-left: 4px;
+}
+
+section .btn-slide:hover {
+    color: #fff !important;
+    background-color: #f9d2b7 !important;
+}
+
+section .divSlide {
+    margin: 20px 0 37px 160px;
+}
+
+section h1 {
+    font-family: value-serif-web !important;
+    font-size: 2.5rem;
+    letter-spacing: .05rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.container-slider p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.container-slider .img-sign {
+    max-width: 80px;
+}
+
+.container-slider h6 {
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    margin-top: 1em;
+    font-size: .875rem;
+}
+
+.container-slider .blur-img {
+    padding: 0 85px !important;
+}
+
+.container-slider .blur-img img {
+    opacity: 0.3 !important;
+    height: 448px !important;
+}
+
+.container-slider .slider-img img {
+    width: 400px;
+    height: 460px;
+}
+
+.container-slider .original-img img {
+    border-right: 12px solid #ffcdac;
+    border-bottom: 12px solid #ffcdac;
+}
+
+.msg-icon img {
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 1000;
+    border: 0px;
+    width: 60px;
+    height: 60px;
+    margin: 38px 28px;
+    cursor: pointer;
+}

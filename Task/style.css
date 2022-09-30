@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar1 .form-inline a {
+    margin: 0 0 13px;
+    color: #fff;
+    padding: 0 12px;
+}
+
+.navbar1 .form-inline .text {
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar1 .form-inline a i {
+    width: 12.1px;
+    height: 12.1px;
+    margin: 6px 15.9px 2.9px 0;
+    object-fit: contain;
+}
+
+.navbar1 .form-inline {
+    padding: 0 120px;
+}
+
+.btn-connect {
+    width: 176px;
+    height: 48px;
+    margin: 13px 103px 6px 33px;
+    padding: 12px 36px 15px 21px;
+    border-radius: 24px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: 1.54px;
+    text-align: left;
+}
+
+.navbar2 .navbar-brand {
+    width: 134px;
+    height: 37px;
+    margin: 18px 500px 12px 119px;
+    font-size: 28px !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.61;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.navbar2 .nav-item .nav-link {
+    width: 108px;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: 1.25px;
+    text-align: left;
+    color: #73b74b;
+}
+
+.navbar2 .dropdown-menu {
+    border: none !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.navbar2 .dropdown-menu ul li {
+    list-style-type: none;
+}
+
+.navbar2 .dropdown-menu ul li .submenu {
+    margin-left: 21px;
+}
+
+.navbar2 .dropdown-menu ul li span {
+    font-size: 18px;
+}
+
+.heading {
+    margin-top: 119px;
+}
+
+.heading h1 {
+    font-size: 38px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+}
+
+.para {
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.btn-get-connect {
+    width: 213px;
+    height: 48px;
+    margin: 80px 103px 6px 33px;
+    padding: 12px 29px 15px 32px;
+    border-radius: 24px;
+    border: solid 2px #72bf58;
+    background-color: #72bf58;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: 1.54px;
+    text-align: center;
+}
+
+.form-control {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19 !important;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6d6d6d !important;
+}
+
+footer {
+    height: 88px;
+    margin: 123px 0 0;
+    padding: 35px 924px 36px 123px;
+    background-image: linear-gradient(to right bottom, #236719, #1c5a16, #164d12, #10410e, #0b350a);
+}
+
+footer ul li {
+    list-style-type: none;
+    height: 17px;
+    margin: 0 0 0 54px;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: 1.25px;
+    text-align: left;
+    color: #fff;
+}

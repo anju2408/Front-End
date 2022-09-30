@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce Website Single Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" aria-hidden="true" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" aria-hidden="true" id="close-btn" onclick="closemenu()"></i>
+            <a href="index.html" class="logo">
+                <span>
+                <h1>LOGO</h1>
+            </span>
+            </a>
+            <input type="text" class="form-control
+            ">
+            <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><i class="fa fa-shopping-basket" aria-hidden="true"></i>cart</a>
+                </li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Single product -->
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="product-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/gallery-1.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/product-3.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/product-6.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/product-4.jpg" class="d-block w-100">
+                            </div>
+                            <a class="carousel-control-prev" href="#product-slider" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#product-slider" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="new-arrival text-center">NEW</p>
+                    <h2>Men's T-Shirts V Neck - Red ZColor</h2>
+                    <p>Product Code: IRSC2020</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <p class="price">USD $15.00</p>
+                    <p><b>Availability:</b> In Stock</p>
+                    <p><b>Condition:</b> New</p>
+                    <p><b>Brand:</b> XYZ Company</p>
+                    <label for="">Quantity</label>
+                    <input type="text" value="1">
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product-description-->
+    <section class="product-description">
+        <div class="container">
+            <h6>Product Description</h6>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ea magni voluptates minima blanditiis officia mollitia ducimus maxime aliquam quas vel quidem animi velit, nostrum sequi perspiciatis porro exercitationem pariatur fugit illum dicta
+                neque. Ipsa consectetur eveniet eos modi quisquam quas voluptatum beatae rerum quibusdam eius temporibus asperiores nisi explicabo, mollitia suscipit soluta inventore ducimus libero maiores magnam ad placeat.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil omnis repellendus, sequi mollitia dolores, minima, nam ad quo soluta libero rerum. Pariatur architecto, suscipit vel beatae qui exercitationem nemo, officia totam laborum
+                minima natus inventore odit doloremque nesciunt hic, consequuntur eligendi iure. Impedit tenetur ut dignissimos voluptas aspernatur similique dicta dolorem magnam, ab placeat facere blanditiis commodi tempora recusandae.</p>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="title-box">
+                <h2>Similar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/img8.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                                    aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Whislist"><i
+                                    class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/img9.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                                    aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Whislist"><i
+                                    class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/img10.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                                    aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Whislist"><i
+                                    class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Shoes</h3>
+                        <h5>$80.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/img11.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                                    aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Whislist"><i
+                                    class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$120.00</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupns</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Carrers</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fa fa-facebook-official"></i>Facebook</p>
+                    <p><i class="fa fa-youtube-play"></i>Youtube</p>
+                    <p><i class="fa fa-linkedin"></i>Linkedin</p>
+                    <p><i class="fa fa-twitter"></i>Twitter</p>
+
+                </div>
+                <div class="col-md-3 footer-img">
+                    <h1>Download App</h1>
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Anju's Tutorials</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
